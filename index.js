@@ -41,6 +41,8 @@ app.use(cors())
 //  });
 
  app.route('/').post(async(req,res)=>{
+
+    
       let countCharacters = (string, letter) => {
         let count = 0;
         for (let i = 0; i < string.length; i++) {
@@ -119,7 +121,7 @@ app.use(cors())
                     resu = parseInt(tet.substring(tet.indexOf('=')+1, tet.indexOf('\n')).trim())
                  }else if(ct  == 1) {
                      resu = parseInt(tet.substring(tet.indexOf('=')+1).trim())
-                     
+                     console.log(resu)
                  }
             }
             break;
